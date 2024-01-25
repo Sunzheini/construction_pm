@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --clr-main-bg: #F3F3F3;
+    --clr-border: #c4bcbc;
+    --clr-black: #111111;
+    --clr-option1: #beceee;
+    --clr-option2: #eacea0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--clr-main-bg);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 1rem;
+
+    height: 510px;
+
+    border: 1px solid var(--clr-border);
+}
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        height: 400px;
+        width: 200px;
+        margin-left: 30px;
+
+        border: 1px solid var(--clr-border);
+    }
+
+        .large-button {
+            width: 160px;
+            height: 160px;
+            border: 1px solid var(--clr-border);
+            background-color: var(--clr-option1);
+            border-radius: 4px;
+
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+    .table-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        height: 400px;
+        width: 440px;
+        margin-left: 30px;
+
+        border: 1px solid var(--clr-border);
+    }
+
+        .table{
+            font-size: 0.7rem;
+
+            margin-top: 20px;
+            width: 400px;
+            border: 1px solid var(--clr-border);
+        }
+
+            .table-head{
+                background-color: var(--clr-option2);
+                font-weight: bold;
+            }
+
+                .table-head-row{
+                }
+
+                    .table-head-cell{
+                        border: 1px solid var(--clr-border);
+                    }
+
+            .table-body{
+                background-color: var(--clr-main-bg);
+            }
+
+                .table-body-row{
+                }
+
+                    .table-body-cell{
+                        border: 1px solid var(--clr-border);
+                    }
+
+    .small-buttons-container {
+        position: absolute;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 5px;
+
+        top: 400px;
+        left: 680px;
+    }
+
+        .small-button {
+            width: 30px;
+            height: 30px;
+            border: 1px solid var(--clr-border);
+            background-color: var(--clr-option1);
+            border-radius: 2px;
+
+            font-size: 0.7rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
